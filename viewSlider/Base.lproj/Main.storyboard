@@ -38,6 +38,9 @@
                                     <constraint firstAttribute="height" constant="30" id="Bgc-Fo-dhA"/>
                                     <constraint firstAttribute="width" constant="200" id="v9N-2S-cvI"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="redSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="CDf-lR-kTm"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Green:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-Ke-t04">
                                 <rect key="frame" x="16" y="223" width="51" height="25"/>
@@ -57,6 +60,9 @@
                                     <constraint firstAttribute="width" constant="200" id="LwU-7S-Z3P"/>
                                     <constraint firstAttribute="height" constant="30" id="iF0-F3-Qco"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="greenSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="FhO-qq-vgl"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V00-ht-X9o">
                                 <rect key="frame" x="16" y="268" width="38" height="40"/>
@@ -88,6 +94,9 @@
                                     <constraint firstAttribute="height" constant="30" id="0xQ-YJ-Lpp"/>
                                     <constraint firstAttribute="width" constant="200" id="cyJ-8f-fJz"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="alphaSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="CHu-t9-KAr"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="he1-YQ-Dqa">
                                 <rect key="frame" x="157" y="273" width="204" height="31"/>
@@ -95,6 +104,9 @@
                                     <constraint firstAttribute="width" constant="200" id="AuK-nw-kHe"/>
                                     <constraint firstAttribute="height" constant="30" id="eOv-d7-Bdj"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="blueSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="I9n-yb-wMf"/>
+                                </connections>
                             </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
