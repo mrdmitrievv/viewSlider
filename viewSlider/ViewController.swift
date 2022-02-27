@@ -18,9 +18,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redSlider.thumbTintColor = .red
-        greenSlider.thumbTintColor = .green
-        alphaSlider.thumbTintColor = .black
+        mainView.layer.cornerRadius = 15
+        
+        redSlider.minimumTrackTintColor = .red
+        greenSlider.minimumTrackTintColor = .green
+        alphaSlider.minimumTrackTintColor = .black
         
         redColorValue.text = "n/a"
         greenColorValue.text = "n/a"
