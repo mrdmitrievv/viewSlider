@@ -32,7 +32,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="u3b-bM-Enm">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="u3b-bM-Enm">
                                 <rect key="frame" x="157" y="173" width="204" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Bgc-Fo-dhA"/>
@@ -54,7 +54,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="pmK-vz-PAS">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="pmK-vz-PAS">
                                 <rect key="frame" x="157" y="223" width="204" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="LwU-7S-Z3P"/>
@@ -88,7 +88,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gy6-ly-dLQ">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="gy6-ly-dLQ">
                                 <rect key="frame" x="157" y="323" width="204" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0xQ-YJ-Lpp"/>
@@ -98,7 +98,7 @@
                                     <action selector="alphaSliderAction" destination="BYZ-38-t0r" eventType="valueChanged" id="CHu-t9-KAr"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="he1-YQ-Dqa">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="he1-YQ-Dqa">
                                 <rect key="frame" x="157" y="273" width="204" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="AuK-nw-kHe"/>
