@@ -1,5 +1,9 @@
 import UIKit
 
+protocol saveColorViewControllerDelegate: AnyObject {
+    func saveColor(backgroundColor: UIColor)
+}
+
 class ViewController: UIViewController {
         
     // MARK: Outlets for value labels and main view
@@ -15,6 +19,13 @@ class ViewController: UIViewController {
     @IBOutlet var blueSlider: UISlider!
     @IBOutlet var alphaSlider: UISlider!
     
+    // MARK: doneButton
+    @IBOutlet var doneButton: UIButton!
+    
+    weak var delegate: saveColorViewControllerDelegate?
+    
+    var mainViewColor: UIColor = .white
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,11 +40,14 @@ class ViewController: UIViewController {
         blueColorValue.text = "n/a"
         alphaValue.text = "n/a"
         
+        // MARK: Устанавлием фон view цветом первого экрана
+        mainView.backgroundColor = mainViewColor
     }
     
     // MARK: Function that changes mainView background color
     func changeViewColor() {
         mainView.backgroundColor = UIColor(red: CGFloat(redSlider.value) / 255, green: CGFloat(greenSlider.value) / 255, blue: CGFloat(blueSlider.value) / 255, alpha: CGFloat(alphaSlider.value))
+        mainViewColor = mainView.backgroundColor!
     }
         
     // MARK: Actions on sliders that change label texts and mainView color
@@ -55,6 +69,11 @@ class ViewController: UIViewController {
     @IBAction func alphaSliderAction() {
         alphaValue.text = String(alphaSlider.value)
         changeViewColor()
+    }
+    
+    
+    @IBAction func doneButtonPressed() {
+        delegate?.saveColor(backgroundColor: mainViewColor)
     }
 }
 
